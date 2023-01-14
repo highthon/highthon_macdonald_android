@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_article"
+        android:icon="@drawable/ic_article"
+        android:title="@string/menu_article" />
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/menu_question"
+        android:icon="@drawable/ic_question"
+        android:title="@string/menu_question" />
+</menu>

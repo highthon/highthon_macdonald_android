@@ -1,2 +1,2 @@
-# highthon_macdonald_android
-맥도날드 안드로이드 앱입니다.
+# happymeal_android
+해피밀 안드로이드 앱입니다

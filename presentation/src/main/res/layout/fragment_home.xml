@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logo"
+                app:layout_constraintBottom_toTopOf="@+id/tvSocialLife"
+                app:layout_constraintStart_toStartOf="@+id/tvSocialLife"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivMyInfo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_user"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSocialLife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="@string/social_life"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ivSocialLife"
+                android:layout_width="0dp"
+                android:layout_height="154dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSocialLife">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/social_life" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:id="@+id/tvSocialLifeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="사회 생활 이렇게"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/ivSocialLife"
+                app:layout_constraintTop_toBottomOf="@+id/ivSocialLife" />
+
+            <TextView
+                android:id="@+id/tvSocialLifeDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/noto_sans_kr_regular"
+                android:text="회사 첫날 어떻게 해야할까? 샤바샤바? 아부? 몰라 자자"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tvSocialLifeTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvSocialLifeTitle" />
+
+            <TextView
+                android:id="@+id/tvFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="@string/finance"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSocialLifeDetail" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ivFinance"
+                android:layout_width="0dp"
+                android:layout_height="154dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFinance">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/finance" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvFinanceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="금린이들 주목"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/ivFinance"
+                app:layout_constraintTop_toBottomOf="@+id/ivFinance" />
+
+            <TextView
+                android:id="@+id/tvFinanceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/noto_sans_kr_regular"
+                android:text="금융 기초 지식을 채우기 위한 좋은 글들"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tvFinanceTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvFinanceTitle" />
+
+            <TextView
+                android:id="@+id/tvLaw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="@string/law"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFinanceDetail" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ivLaw"
+                android:layout_width="0dp"
+                android:layout_height="154dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLaw">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/law" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvLawTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="법대로 해! 법대로 하자고!"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/ivLaw"
+                app:layout_constraintTop_toBottomOf="@+id/ivLaw" />
+
+            <TextView
+                android:id="@+id/tvLawDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/noto_sans_kr_regular"
+                android:text="네. 법대로 하시죠라고 말 할 수 있게 되는 글들"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tvLawTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvLawTitle" />
+
+            <TextView
+                android:id="@+id/tvETC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="@string/etc"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLawDetail" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ivETC"
+                android:layout_width="0dp"
+                android:layout_height="154dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvETC">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/etc" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvETCTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="개발, 디자인, 인간관계 모든 것"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/ivETC"
+                app:layout_constraintTop_toBottomOf="@+id/ivETC" />
+
+            <TextView
+                android:id="@+id/tvETCDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/noto_sans_kr_regular"
+                android:text="이 글을 다보면 현자의 경자에 이르른다."
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tvETCTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvETCTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">해피밀 🍔</string>
+    <string name="menu_article">Article</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_question">Question</string>
+    <string name="finance">금융</string>
+    <string name="law">법률</string>
+    <string name="etc">기타</string>
+    <string name="social_life">사회생활</string>
+    <string name="recommend">추천하기</string>
+    <string name="comment">댓글</string>
+    <string name="inquiry">조회</string>
+    <string name="free">Free</string>
+    <string name="premium">Premium</string>
+    <string name="post_question">질문 작성</string>
+    <string name="title">제목</string>
+    <string name="detail">내용</string>
+</resources>

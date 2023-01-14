@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glMidLine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:background="#F9F9F9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfileImage"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/noto_sans_kr_medium"
+            android:text="이용진"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/civProfileImage"
+            app:layout_constraintStart_toEndOf="@+id/civProfileImage"
+            app:layout_constraintTop_toTopOf="@+id/civProfileImage" />
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/noto_sans_kr_bold"
+            android:text="금융 기초지식 부족한데, 추천할 책이나 강의 있을까요? 있으면 좀 알려주갹가남"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/civProfileImage" />
+
+        <kr.co.prnd.readmore.ReadMoreTextView
+            android:id="@+id/tvQuestionDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:text="금융 기초지식 부족한데, 추천할 만한 책이나 강의가 있을까요? 금융 기초지식 부족한데, 추천할 만한 책이나 강의가 있을까요?"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvQuestion"
+            app:layout_constraintStart_toStartOf="@+id/tvQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuestion"
+            app:readMoreColor="@color/main_color"
+            app:readMoreMaxLine="3" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="@font/noto_sans_kr_medium"
+            android:text="추천"
+
+            android:textColor="#CDCDCD"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvFavorite"
+            app:layout_constraintStart_toStartOf="@+id/tvQuestionDetail"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuestionDetail" />
+
+        <TextView
+            android:id="@+id/tvRecommendCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="24"
+            android:textColor="#CDCDCD"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="답변"
+            android:textColor="#CDCDCD"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRecommendCount"
+            app:layout_constraintStart_toEndOf="@+id/tvRecommendCount"
+            app:layout_constraintTop_toTopOf="@+id/tvRecommendCount" />
+
+        <TextView
+            android:id="@+id/tvCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="6"
+            android:textColor="#CDCDCD"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRecommendCount"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/tvRecommendCount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:text="@string/inquiry"
+            android:textColor="#CDCDCD"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvInquiryCount"
+            app:layout_constraintEnd_toStartOf="@+id/tvInquiryCount"
+            app:layout_constraintTop_toTopOf="@+id/tvInquiryCount" />
+
+        <TextView
+            android:id="@+id/tvInquiryCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="306"
+            android:textColor="#CDCDCD"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRecommendCount"
+            app:layout_constraintEnd_toEndOf="@+id/tvQuestionDetail"
+            app:layout_constraintTop_toTopOf="@+id/tvRecommendCount" />
+
+        <ImageView
+            android:id="@+id/ivFavorite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_favorite"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFavorite"
+            app:layout_constraintEnd_toStartOf="@+id/tvFavorite"
+            app:layout_constraintTop_toTopOf="@+id/tvFavorite" />
+
+        <TextView
+            android:id="@+id/tvFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/noto_sans_kr_medium"
+            android:text="@string/recommend"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/glMidLine" />
+
+        <ImageView
+            android:id="@+id/ivComment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_comment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/glMidLine" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/noto_sans_kr_medium"
+            android:text="@string/comment"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivComment"
+            app:layout_constraintStart_toEndOf="@+id/ivComment"
+            app:layout_constraintTop_toTopOf="@+id/ivComment" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
